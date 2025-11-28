@@ -1,0 +1,81 @@
+@use "keyframes";
+.principal{
+    background: black;
+    main{
+    -webkit-animation: scale-in-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-in-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    margin: 8rem 40rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    color:white;
+    /* https://grabient.com/HQTgHCA0wKwMx2gJgIxWAdjgFmiFAbNGhsiqcEmGMTKXLDAAyTaYo1KwG4C0TwJhhrA4w6DGx8BIGASA?style=linearGradient&steps=13&angle=45 */
+
+background: linear-gradient(45deg, rgba(174, 123, 21, 1.000) 0.000%, rgba(176, 130, 22, 1.000) 8.333%, rgba(179, 137, 22, 1.000) 16.667%, rgba(182, 144, 23, 1.000) 25.000%, rgba(185, 151, 24, 1.000) 33.333%, rgba(188, 157, 24, 1.000) 41.667%, rgba(192, 163, 25, 1.000) 50.000%, rgba(195, 169, 26, 1.000) 58.333%, rgba(199, 175, 26, 1.000) 66.667%, rgba(203, 180, 27, 1.000) 75.000%, rgba(207, 185, 28, 1.000) 83.333%, rgba(211, 189, 29, 1.000) 91.667%, rgba(216, 193, 29, 1.000) 100.000%);
+    .button{display: flex;flex-direction: row-reverse;}
+    .keybutton{
+        	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+    }
+    .corazon{
+        font-size: 3rem;
+        text-align: end;
+          font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  font-style: normal;
+    }
+}
+}
+
+.entrada{
+    background-image: url(/assets/fondoEntrada.jpg);
+     min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+/*        @media screen and (max-width:1280px){
+        width: 99vw;
+    }
+    
+    @media screen and (max-width:1024px){
+       width: 99vw;
+    }
+        @media screen and (max-width: 768px){
+        width: 99vw;
+    } */
+     .card {
+     /* https://grabient.com/HQNgjAnANMCsDsAmKZgAZ4GYaJNAtGsIrGlIcGGmRQCxpjlEjyMWxjYVoAcZlVGGhZA?style=linearGradient&steps=3&angle=45 */
+
+background: linear-gradient(45deg, rgba(174, 123, 21, 1.000) 0.000%, rgba(176, 130, 22, 1.000) 8.333%, rgba(179, 137, 22, 1.000) 16.667%, rgba(182, 144, 23, 1.000) 25.000%, rgba(185, 151, 24, 1.000) 33.333%, rgba(188, 157, 24, 1.000) 41.667%, rgba(192, 163, 25, 1.000) 50.000%, rgba(195, 169, 26, 1.000) 58.333%, rgba(199, 175, 26, 1.000) 66.667%, rgba(203, 180, 27, 1.000) 75.000%, rgba(207, 185, 28, 1.000) 83.333%, rgba(211, 189, 29, 1.000) 91.667%, rgba(216, 193, 29, 1.000) 100.000%);
+      padding: 2.5rem 3rem;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      max-width: 420px;
+      border: 2px solid #ebd409;
+    }
+
+    .card h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0.6rem;
+      color: #0f172a;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #ffffff;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 2rem 1.5rem;
+        margin: 0 1rem;
+      }
+
+      .card h1 {
+        font-size: 1.3rem;
+      }
+    }
+
+}

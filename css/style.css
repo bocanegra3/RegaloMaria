@@ -1,0 +1,170 @@
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+.principal {
+  background: black;
+}
+.principal main {
+  -webkit-animation: scale-in-center 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: scale-in-center 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  margin: 8rem 40rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+  /* https://grabient.com/HQTgHCA0wKwMx2gJgIxWAdjgFmiFAbNGhsiqcEmGMTKXLDAAyTaYo1KwG4C0TwJhhrA4w6DGx8BIGASA?style=linearGradient&steps=13&angle=45 */
+  background: linear-gradient(45deg, rgb(174, 123, 21) 0%, rgb(176, 130, 22) 8.333%, rgb(179, 137, 22) 16.667%, rgb(182, 144, 23) 25%, rgb(185, 151, 24) 33.333%, rgb(188, 157, 24) 41.667%, rgb(192, 163, 25) 50%, rgb(195, 169, 26) 58.333%, rgb(199, 175, 26) 66.667%, rgb(203, 180, 27) 75%, rgb(207, 185, 28) 83.333%, rgb(211, 189, 29) 91.667%, rgb(216, 193, 29) 100%);
+}
+.principal main .button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.principal main .keybutton {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+.principal main .corazon {
+  font-size: 3rem;
+  text-align: end;
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.entrada {
+  background-image: url(/assets/fondoEntrada.jpg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  /*        @media screen and (max-width:1280px){
+          width: 99vw;
+      }
+
+      @media screen and (max-width:1024px){
+         width: 99vw;
+      }
+          @media screen and (max-width: 768px){
+          width: 99vw;
+      } */
+}
+.entrada .card {
+  /* https://grabient.com/HQNgjAnANMCsDsAmKZgAZ4GYaJNAtGsIrGlIcGGmRQCxpjlEjyMWxjYVoAcZlVGGhZA?style=linearGradient&steps=3&angle=45 */
+  background: linear-gradient(45deg, rgb(174, 123, 21) 0%, rgb(176, 130, 22) 8.333%, rgb(179, 137, 22) 16.667%, rgb(182, 144, 23) 25%, rgb(185, 151, 24) 33.333%, rgb(188, 157, 24) 41.667%, rgb(192, 163, 25) 50%, rgb(195, 169, 26) 58.333%, rgb(199, 175, 26) 66.667%, rgb(203, 180, 27) 75%, rgb(207, 185, 28) 83.333%, rgb(211, 189, 29) 91.667%, rgb(216, 193, 29) 100%);
+  padding: 2.5rem 3rem;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  max-width: 420px;
+  border: 2px solid #ebd409;
+}
+.entrada .card h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+  color: #0f172a;
+}
+.entrada .card p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+@media (max-width: 480px) {
+  .entrada .card {
+    padding: 2rem 1.5rem;
+    margin: 0 1rem;
+  }
+  .entrada .card h1 {
+    font-size: 1.3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
