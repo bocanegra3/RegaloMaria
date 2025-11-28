@@ -104,6 +104,11 @@
   /* https://grabient.com/HQTgHCA0wKwMx2gJgIxWAdjgFmiFAbNGhsiqcEmGMTKXLDAAyTaYo1KwG4C0TwJhhrA4w6DGx8BIGASA?style=linearGradient&steps=13&angle=45 */
   background: linear-gradient(45deg, rgb(174, 123, 21) 0%, rgb(176, 130, 22) 8.333%, rgb(179, 137, 22) 16.667%, rgb(182, 144, 23) 25%, rgb(185, 151, 24) 33.333%, rgb(188, 157, 24) 41.667%, rgb(192, 163, 25) 50%, rgb(195, 169, 26) 58.333%, rgb(199, 175, 26) 66.667%, rgb(203, 180, 27) 75%, rgb(207, 185, 28) 83.333%, rgb(211, 189, 29) 91.667%, rgb(216, 193, 29) 100%);
 }
+@media screen and (max-width: 768px) {
+  .principal main {
+    margin: 5px;
+  }
+}
 .principal main .button {
   display: flex;
   flex-direction: row-reverse;
@@ -152,10 +157,12 @@
   font-size: 1.6rem;
   margin-bottom: 0.6rem;
   color: #0f172a;
+  border: none, i !important;
 }
 .entrada .card p {
   font-size: 1rem;
   color: #ffffff;
+  border: none, i !important;
 }
 @media (max-width: 480px) {
   .entrada .card {
